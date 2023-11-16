@@ -10,7 +10,7 @@ const {
     elements:{email, password}
   } = event.currentTarget;
  if (email.value === "" || password.value === "") {
- alert('Please fill in all the fields!');
+ alert('Будь ласка заповніть всі поля!');
   return
  } else {
   const result = {
