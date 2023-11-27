@@ -1,5 +1,7 @@
 const categoriesList = document.querySelector('#categories');
+// Використання навігації DOM 
 const categories = categoriesList.children;
+// 
 console.log(`Number of categories: ${categories.length}`);
 
 Array.from(categories).forEach(category => {
