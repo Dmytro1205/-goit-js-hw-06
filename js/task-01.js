@@ -1,12 +1,9 @@
-const categoriesList = document.querySelector('#categories');
-// Використання навігації DOM 
-const categories = categoriesList.children;
-// 
-console.log(`Number of categories: ${categories.length}`);
+const categoryRef = document.querySelectorAll("#categories h2");
+console.log("Number of categories: ", categoryRef.length);
 
-Array.from(categories).forEach(category => {
-  const categoryName = category.querySelector('h2').textContent;
-  const categoryItems = category.querySelectorAll('li').length;
-  console.log(`Category: ${categoryName}`);
-  console.log(`Elements: ${categoryItems}`)
-});
+categoryRef.forEach(category => {
+  console.log("Category: ", category.textContent);
+const children_list = category.nextElementSibling.children;
+  console.log("Elements: ", children_list.length);
+    
+})
